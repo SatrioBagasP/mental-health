@@ -1,0 +1,812 @@
+/* navbar */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150.52px;
+  min-height: 16px;
+  font-family: calibri;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
+
+/* span {
+  font-size: 0.975rem;
+  font-weight: 700;
+  padding: 0 10px;
+} */
+
+ion-icon {
+  font-size: 2em;
+  transition: all 0.5s linear;
+}
+
+.btn:hover ion-icon {
+  transform: rotate(-90deg);
+}
+
+.hover {
+  position: relative;
+}
+
+.yellow {
+  /* background: #0ebac5; */
+  background: none;
+  color: black;
+}
+
+.yellow::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 100%;
+  background-color: #9bdfff;
+  position: absolute;
+  border-radius: 100px;
+  left: 1em;
+  z-index: -1;
+  transition: all 600ms ease;
+}
+
+.yellow:hover::before {
+  width: 90%;
+}
+
+.yellow:hover ion-icon {
+  transform: translateX(10px);
+}
+.max-w-screen-xxl {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.logo {
+  width: 150px;
+}
+.linkmenu {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+/* home/index */
+/* a {
+  width: max-content;
+} */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  height: 100vh;
+  margin-top: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background: rgb(17, 34, 158);
+  background: linear-gradient(
+    180deg,
+    rgba(17, 34, 158, 1) 20%,
+    rgba(44, 235, 211, 1) 100%
+  );
+}
+.garis {
+  height: 2px; /* Tentukan tinggi garis horizontal */
+  background-color: #4f4f4f; /* Tentukan warna garis horizontal */
+  border: none; /* Hilangkan batas */
+  margin: 20px 0; /* Atur margin di atas dan di bawah */
+}
+.colom1 {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  color: white;
+}
+.colom1 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+.colom2 {
+  /* background-color: red; */
+  height: 500px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.imgwrapper {
+  display: flex;
+  justify-content: center;
+}
+.colom2img {
+  height: 100%;
+  width: 100%;
+}
+.innercolom1 {
+  /* background-color: #ffd700; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 100px;
+}
+.content {
+  /* background-color: red; */
+  width: 48%;
+}
+.icon-box {
+  display: flex;
+}
+.icon-img {
+  background-color: #fedcea;
+  margin: 5px;
+  width: 80px;
+  height: 70px;
+  padding: 4px;
+  border-radius: 50%;
+}
+.icon-img img {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+}
+.icon-content {
+  width: 100%;
+  color: #283433;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  /* margin-left: 10px; */
+}
+.icon-content h6 {
+  font-size: 20px;
+}
+.bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #283433;
+}
+.btn-hero {
+  margin-top: 10px;
+  cursor: pointer;
+  color: #1e1e1a;
+  padding: 10px;
+  width: 250px;
+  height: 55px;
+  border: 0;
+  border-radius: 25px;
+  background-color: #ffffff;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #132ea1;
+}
+.test {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  background-color: #4f4f4f;
+}
+
+@media (max-width: 991px) {
+  .max-w-screen-xxl {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .colom1 {
+    width: 100%;
+  }
+  .colom1 h1 {
+    text-align: center;
+  }
+  .colom2 {
+    width: 100%;
+  }
+  .innercolom1 {
+    margin: 0;
+  }
+  .content {
+    width: 100%;
+  }
+  .icon-content {
+    font-size: 16px;
+  }
+}
+
+
+/* MAIN KONTEN */
+nav p
+{
+    width: 130px;
+}
+.konten
+{
+    padding-top: 50px;
+    height: 100vh;
+    background: rgb(17, 34, 158);
+    background: linear-gradient(
+      180deg,
+      rgba(17, 34, 158, 1) 20%,
+      rgba(44, 235, 211, 1) 100%
+    );
+    color: white;
+}
+.konten h1
+{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.konten h2
+{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+.greatting
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a
+{
+text-decoration: none;
+}
+/* Style dasar button */
+.custom-button {
+padding: 10px 20px;
+background-color: #d9d9d9;
+width: 200px;
+margin: 5px;
+color: #000000;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s; /* Efek transisi pada hover */
+}
+
+/* Style saat button dihover */
+.custom-button:hover {
+background-color: #74bcff;
+color: #ffffff;
+}
+.menu
+{
+margin: 10px;
+background-color: #74BCFF;
+padding: 10px;
+width: 150px;
+height: 150px; 
+cursor: pointer;
+color: white;
+border: none;
+border-radius: 15px;
+transition: 0.5s; 
+}
+.menu:hover
+{
+scale : 105%;
+}
+.menu img
+{
+height: 60px;
+}
+.dokter
+{
+margin-left: 40px;
+}
+.mood-wrapper
+{
+display: flex;
+justify-content: center;
+}
+
+.mood-happy, .mood-calm,.mood-relax, .mood-angry
+{
+margin: 10px;
+height: 80px;
+cursor: pointer;
+border-radius: 10px;
+border: none;
+padding: 15px;
+transition: 0.5s;
+}
+.mood-happy
+{
+background-color: #EF5DA8;
+}
+.mood-calm
+{ 
+background-color: #AEAFF7;
+}
+.mood-relax
+{
+background-color: #A0E3E2;
+}
+.mood-angry
+{
+background-color: #F09E54;
+}
+.mood-wrapper
+{
+display: flex;
+}
+.mood-happy:hover,.mood-calm:hover , .mood-relax:hover, .mood-angry:hover
+{
+scale : 105%;
+}
+.moodtext
+{
+text-align: center;
+}
+.mood
+{
+width: max-content;
+margin: 5px;
+}
+.pembatas
+{
+margin: 20px;
+display: flex;
+justify-content: center;
+}
+hr
+{
+background-color: #4F4F4F;
+text-align: center;
+width: 600px;
+}
+.menu-wrapper
+{
+display: flex;
+justify-content: center;
+}
+.menu-img
+{
+display: flex;
+justify-content: center;
+}
+.p-menu
+{
+  padding: 10px;
+}
+
+/* DOKTER */
+nav p {
+  width: 130px;
+}
+.dokter-wrapper
+{
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  background: rgb(17, 34, 158);
+  background: linear-gradient(
+    180deg,
+    rgba(17, 34, 158, 1) 20%,
+    rgba(44, 235, 211, 1) 100%
+  );
+}
+.sidebar {
+  height: max-content;
+  width: 50%;
+
+}
+.list-dokter {
+  padding-top: 50px;
+  height: max-content;
+  width: 50%;
+
+}
+.sidebar-heading {
+  color: white;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.sidebar-subheading {
+  color: white;
+  padding-top: 20px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Arima', system-ui;
+}
+.sidebar-img-wrapper {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.sidebar-desc {
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.sidebar-list {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+.sidebar-list-wrapper {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 50%;
+}
+.sidebar-list-img {
+  margin: 10px;
+  padding: 10px;
+}
+.sidebar-list-img img {
+  width: 100%;
+}
+.sidebar-list-desc
+{
+  color: white;
+  font-size: 20px;
+  font-family: 'Arima', system-ui;
+}
+.list-dokter-heading
+{
+  color: white;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.list-dokter-subheading
+{
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Arima', system-ui;
+}
+.list-dokter-categori
+{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categori-heading
+{
+  margin-top: 20px ;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.custom-button {
+  padding: 10px 15px;
+  background-color: #d9d9d9;
+  width: 80px;
+  margin: 5px;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s; /* Efek transisi pada hover */
+}
+.categori-desc
+{
+  width: max-content;
+  margin-left: -3px;
+}
+.title
+{
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+/* Style saat button dihover */
+.custom-button:hover {
+  background-color: #74bcff;
+  color: #ffffff;
+}
+.list-dokter-wrapper
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  height: 600px;
+}
+.dokter-card-wrapper
+{
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  height: 150px;
+  width: 47%;
+  background-color: #74BCFF;
+  border-radius: 10px;
+}
+.dokter-card-img
+{
+  display: flex;
+  height: 100%;
+  width: 70px;
+}
+.dokter-card-img img
+{
+  width: 100%;
+  height: 90%;
+}
+.dokter-name
+{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.dokter-harga
+{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.dokter-card-footer
+{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.page
+{
+  display: flex;
+  justify-content: center;
+}
+
+.page ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.page li {
+  margin-right: 10px;
+}
+
+.page a {
+  text-decoration: none;
+  padding: 8px 12px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+}
+.active {
+  background-color: #74bcff;
+  color: #ffffff;
+}
+
+.title
+{
+  font-size: 50px;
+  text-align: center;
+}
+
+.page a.active {
+  background-color: #2980b9;
+}
+
+.detail-dokter {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-dokter-wrapper
+{
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  width: 50%;
+  height: max-content;
+}
+.detail-dokter-card {
+  border: 1px solid;
+  background-color: white;
+  border-radius: 10px;
+}
+.detail-dokter-img {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.detail-dokter-img img {
+  width: 150px;
+}
+.detail-dokter-name {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.detail-dokter-kategori {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.detail-dokter-harga
+{
+  width: 100%;
+  height: 50px;
+  background-color: #0093FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.detail-dokter-ahli
+{
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.detail-dokter-deskripsi
+{
+  min-height: 150px;
+  max-height: max-content;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+.detail-dokter-btn
+{
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: red;
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.marginleft-10
+{
+  margin-left: 5px;
+}
+.jadwal-dokter {
+
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jadwal-dokter-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 70%;
+  height: max-content;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.5);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(19.4px);
+-webkit-backdrop-filter: blur(19.4px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.jadwal-dokter-konten {
+  width: 90%;
+}
+.jadwal-dokter-profile {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  height: max-content;
+  display: flex;
+}
+.jadwal-dokter-img {
+  padding: 10px;
+  width: max-content;
+}
+.jadwal-dokter-name {
+  font-size: 20px;
+  margin: 10px;
+}
+.jadwal-dokter-harga-wrapper {
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100%;
+  height: max-content;
+}
+.jadwal-dokter-list-harga {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.jadwal-dokter-input {
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  flex-wrap: wrap;
+}
+.jadwal-dokter-tanggal {
+  width: 80%;
+}
+.jadwal-dokter-btn {
+  border-radius: 10px;
+  width: 20%;
+  padding: 5px;
+  background-color: rgb(189, 189, 189);
+}
+.jadwal-dokter-tanggal input[type="text"] {
+  width: 90%;
+}
+.jadwal-dokter-kirim button {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: rgb(132, 132, 255);
+}
+
+.center {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+.apointment-wrapper {
+  padding: 50px;
+  justify-content: center;
+  min-height: 100vh;
+  max-height: max-content;
+  background: rgb(17, 34, 158);
+  background: linear-gradient(
+    180deg,
+    rgba(17, 34, 158, 1) 20%,
+    rgba(44, 235, 211, 1) 100%
+  );
+}
+
+
+@media (max-width: 991px) {
+  .apointment-wrapper
+  {
+      padding: 10px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .list-dokter, .detail-dokter .jadwal-dokter{
+    width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+Nama Use Case
+Login ke Sistem
+
+Aktor Utama
+Pengguna (User)
+
+Aktor Pendukung
+Sistem Keamanan
+
+Deskripsi Singkat
+Use case ini menjelaskan proses bagaimana seorang pengguna dapat masuk ke dalam sistem dengan menggunakan akunnya.
+
+Pra-Syarat
+Pengguna sudah memiliki akun di sistem.
+
+Langkah-langkah
+1. Masukkan Informasi Login
+Deskripsi: Pengguna memasukkan nama pengguna (username) dan kata sandi (password) mereka.
+Aksi: Pengguna mengisi kolom username dan password pada formulir login.
+
+2. Verifikasi Informasi Login
+Deskripsi: Sistem memverifikasi kecocokan antara informasi yang dimasukkan oleh pengguna dengan data yang tersimpan.
+Aksi: Sistem memeriksa database untuk memastikan username dan password sesuai.
+
+3. Otentikasi Berhasil
+Deskripsi: Jika informasi login benar, sistem memberikan akses ke area terbatas sesuai dengan hak akses pengguna.
+Aksi: Sistem memberikan token otentikasi dan mengarahkan pengguna ke dashboard atau halaman beranda.
+
+Post-Syarat
+Pengguna berhasil login dan memiliki akses ke fitur-fitur yang sesuai.
+
+Skenario Alternatif
+Jika informasi login salah, sistem memberikan pesan kesalahan dan meminta pengguna untuk memasukkan informasi kembali.
+Jika pengguna lupa kata sandi, sistem menyediakan opsi untuk mereset kata sandi dengan mengirimkan tautan reset ke email terkait.
+
+Keterbatasan
+Pengguna memiliki tiga percobaan login yang gagal sebelum akun diblokir untuk sementara.
+
+Catatan Tambahan
+Sistem dapat menyimpan log aktivitas login untuk keperluan keamanan dan audit.
